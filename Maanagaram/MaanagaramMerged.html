@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body
+{
+  font-family: 'Space Mono', monospace;
+}
+
+.Sri{fill: #41D3bd;opacity: 0.7;}
+
+.Sundeep{fill: #104683;opacity: 0.7;}
+
+.Charlie{fill: #DB052B;opacity: 0.7;}
+
+.Muniskanth{fill: #c51b8a;opacity: 0.7;}
+
+
+.axis--x, .axis--y path {
+  display: none;
+}
+
+.chars
+{
+  font-size: 19px;
+  white-space: nowrap;
+}
+
+.brand
+{
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+
+.tick line{
+  visibility:hidden;
+}
+
+.interaval
+{
+  fill: teal;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+path.swoopy, #arrowhead
+{
+    fill: none;
+    stroke: black;
+}
+
+</style>
+<svg width="1100" height="500"></svg>
+<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="swoopyArrow.js"></script>
+<script>
+
+var svg = d3.select("svg"),
+    margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = +svg.attr("width") - margin.left - margin.right,
+    height = +svg.attr("height") - margin.top - margin.bottom;
+
+
+var x = d3.scaleLinear().range([0, width-100]),
+    y = d3.scaleOrdinal().range([400, 300, 200, 100]),
+    z = d3.scaleLinear().range([0,50])
+
+var g = svg.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.csv("maanagaram3.csv", function(error, data) {
+
+console.log(data)
+  if (error) throw error;
+
+   var char = data.map(function(d){return d.char;});
+   char = char.filter((x, i, a) => a.indexOf(x) == i)
+   x.domain([0, d3.max(data, function(d) { return +d.start; })]);
+   y.domain(char);
+   z.domain([0, d3.max(data, function(d) { return +d.diff; })]);
+
+
+  g.selectAll(".bar")
+    .data(data)
+    .enter().append("circle")
+      .attr("class", function(d){ return d.char})
+      .attr("cx", function(d) { return (x(+d.start)+x(+d.end))/2; })
+      .attr("cy", function(d) { return  250 })
+      .attr("r", function(d) {return z(+d.diff)/2})
+      .attr("title", function(d){return +d.start})
+
+
+  g.append("g")
+      .attr("class", "axis axis--x")
+      .attr("transform", "translate(0," + (height-30) + ")")
+      .call(d3.axisBottom(x));
+
+  // g.append("g")
+  //     .attr("class", "axis axis--y chars")
+  //     .style("text-anchor", "start")
+  //     .attr("transform", "translate("+ (width-70) + ", 0 )")
+  //     .call(d3.axisLeft(y))
+
+  var legendloop = g.selectAll('.nodes')
+    .data(char)
+    .enter()
+
+    legendloop.append('circle')
+              .attr("class", function(d){ return d.char})
+              .attr("cx", 800)
+              .attr("cy", function(d,i) { return  100+i*30 })
+              .attr('class', function(d){return d})
+              .attr("r", 7)
+
+
+              legendloop.append('text')
+                        .attr("x", 820)
+                        .attr("y", function(d,i) { return  105+i*30 })
+                        .attr('class', 'chars')
+                        .text(function(d){return d})
+
+
+
+
+    g.append("text")
+      .attr('x', 400)
+      .attr('y', 450)
+      .classed('chars', true)
+      .text("< ---Movie Runtime--- >");
+
+       g.append("text")
+      .attr('x', 800)
+      .attr('y', 450)
+      .classed('brand', true)
+      .text("Datacomics");
+
+     g.append("text")
+      .attr('x', 400)
+      .attr('y', 70)
+      .classed('chars', true)
+      .text("Mapping Maanagaram");
+
+      g.append('rect')
+       .attr('x', x(71.85))
+       .attr('y', 90)
+       .attr('width', 2)
+       .attr('height', 320)
+       .attr('class', 'interaval')
+
+// code for swoopy markers starts here
+
+svg.append('defs')
+  .append("marker")
+    .attr("id", "arrowhead")
+    .attr("viewBox", "-10 -10 20 20")
+    .attr("refX", 0)
+    .attr("refY", 0)
+    .attr("markerWidth", 20)
+    .attr("markerHeight", 20)
+    .attr("stroke-width", 1)
+    .attr("orient", "auto")
+  .append("polyline")
+    .attr("stroke-linejoin", "bevel")
+    .attr("points", "-6.75,-6.75 0,0 -6.75,6.75");
+
+
+var swoopy = swoopyArrow()
+  .angle(Math.PI/4)
+  .x(function(d) { return d[0]; })
+  .y(function(d) { return d[1]; });
+
+var swoopy2 = swoopyArrow()
+  .angle(Math.PI/4)
+  .x(function(d) { return d[0]; })
+  .y(function(d) { return d[1]; });
+
+// svg.append("path")
+//   .classed('swoopy', true)
+//   .attr('marker-end', 'url(#arrowhead)')
+//   .style('stroke', 'black')
+//   .datum([[140,196],[220,270]])
+//   .attr("d", swoopy); 
+
+
+svg.append("path")
+  .classed('swoopy', true)
+  .attr('marker-end', 'url(#arrowhead)')
+  .style('stroke', 'black')
+  .datum([[90,290],[200,350]])
+  .attr("d", swoopy2); 
+
+  svg.append("path")
+  .classed('swoopy', true)
+  .attr('marker-end', 'url(#arrowhead)')
+  .style('stroke', 'black')
+  .datum([[630,270],[660,330]])
+  .attr("d", swoopy2); 
+
+  svg.append("path")
+  .classed('swoopy', true)
+  .attr('marker-end', 'url(#arrowhead)')
+  .style('stroke', 'black')
+  .datum([[890,270],[920,350]])
+  .attr("d", swoopy2); 
+
+svg.append("text")
+    .classed('chars', true)
+    .attr('x', 200)
+    .attr('y', 375)
+    .text('Bar Scene')
+
+svg.append("text")
+    .classed('chars', true)
+    .attr('x', 660)
+    .attr('y', 345)
+    .text('Cab Drive')
+
+svg.append("text")
+    .classed('chars', true)
+    .attr('x', 800)
+    .attr('y', 375)
+    .text("Kidnapping Traingle")
+
+
+
+
+});
+
+</script>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font-family: 'Inconsolata', monospace;
+  margin: auto;
+  padding-top: 40px;
+  position: relative;
+  width: 960px;
+}
+
+svg {
+  overflow: visible;
+}
+
+path.swoopy, #arrowhead
+{
+    fill: none;
+    stroke: black;
+}
+
+.head
+{
+    font-size: 30px;
+}
+
+
+.legend
+{
+    font-size: 20px;
+}
+
+.texted
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+</style>
+<body>
+<div id='kamal'></div>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="swoopyArrow.js"></script>
+<script >
+var svg = d3.select('#kamal')
+            .append('svg')
+            .attr('height', 600 )
+            .attr('width', 1200)
+
+    d3.csv('kbsir.csv', function(data){
+        for(var i=0; i<data.length; i++)
+        {
+
+            svg.append('text')
+               .attr('x', 0)
+               .attr('y', 21+(i*13))
+               .attr('class', 'texted')
+               .text(parseInt(data[i].year))
+
+        var chararray = JSON.parse(data[i].char)
+        var moviearray = (data[i].movie)
+        moviearray = moviearray.replace(/'/g, '"');
+        moviearray = JSON.parse(moviearray);
+        for(var k=0, charlenth = chararray.length ; k<charlenth; k++)
+        {
+
+       var img = svg.append("svg:image")
+            .attr("xlink:href", function(){ return chararray[k]==1? 'double.svg': 'male.svg'})
+            .attr("width", 20)
+            .attr("height", 12)
+            .attr("x",  25 + k*20  )
+            .attr("y", 10+(i*13))
+            .attr('title', i)
+
+            img.append('svg:title')
+              .text(moviearray[k])
+
+        }
+        }
+    })
+
+
+svg.append('defs')
+  .append("marker")
+    .attr("id", "arrowhead")
+    .attr("viewBox", "-10 -10 20 20")
+    .attr("refX", 0)
+    .attr("refY", 0)
+    .attr("markerWidth", 20)
+    .attr("markerHeight", 20)
+    .attr("stroke-width", 1)
+    .attr("orient", "auto")
+  .append("polyline")
+    .attr("stroke-linejoin", "bevel")
+    .attr("points", "-6.75,-6.75 0,0 -6.75,6.75");
+
+
+var swoopy = swoopyArrow()
+  .angle(Math.PI/4)
+  .x(function(d) { return d[0]; })
+  .y(function(d) { return d[1]; });
+
+var swoopy2 = swoopyArrow()
+  .angle(Math.PI/3)
+  .x(function(d) { return d[0]; })
+  .y(function(d) { return d[1]; });
+
+svg.append("path")
+  .classed('swoopy', true)
+  .attr('marker-end', 'url(#arrowhead)')
+  .style('stroke', 'black')
+  .datum([[85,150],[200,120]])
+  .attr("d", swoopy); 
+
+
+svg.append("path")
+  .classed('swoopy', true)
+  .attr('marker-end', 'url(#arrowhead)')
+  .style('stroke', 'black')
+  .datum([[65,315],[200,350]])
+  .attr("d", swoopy2); 
+
+svg.append('text')
+   .attr('x', 205)
+   .attr('y', 360)
+   .text('Punnagai Mannan')
+
+svg.append('text')
+   .attr('x', 205)
+   .attr('y', 100)
+   .text('Between 1973 to 1980')
+
+
+svg.append('text')
+   .attr('x', 205)
+   .attr('y', 120)
+   .text('18 out of 22 Movies directed KB')
+
+svg.append('text')
+   .attr('x', 205)
+   .attr('y', 140)
+   .text('had Kamal in it !')
+
+svg.append('text')
+   .attr('x', 500)
+   .attr('y', 50)
+   .attr('class', 'head')
+   .text("KB's Golden Boy")
+
+svg.append("svg:image")
+            .attr("xlink:href",'double.svg')
+            .attr("width", 30)
+            .attr("height", 32)
+            .attr("x",  500 )
+            .attr("y", 70)
+
+svg.append('text')
+   .attr('x', 540)
+   .attr('y', 90)
+   .attr('class', 'legend')
+   .text('Tested for Kamal Positive')
+
+svg.append('text')
+   .attr('x', 600)
+   .attr('y', 420)
+   .attr('class', 'legend')
+   .text('Data Comics')
+
+
+
+</script>
+</body>

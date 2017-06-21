@@ -1,0 +1,46 @@
+year,director,dir
+1960,['A. Bhimsingh'],[0]
+1962,"['A. Bhimsingh', 'K. Shankar', 'K. S. Sethumadhavan']","[0, 0, 0]"
+1963,"['G. R. Nathan', 'V. N. Reddy']","[0, 0]"
+1970,['M. A. Thirumugam'],[0]
+1971,['Thankappan'],[0]
+1972,['K. S. Gopalakrishnan'],[0]
+1973,"['K. Balachander', 'K. Balachander']","[1, 1]"
+1974,"['Jos A.N. Fernando', 'A. P. Nagarajan', 'K. Balachander', 'K. S. Sethumadhavan', 'S. P. Muthuraman', 'N. Sankaran Nair', 'K. Balachander', 'M. S. Senthil']","[0, 0, 1, 0, 0, 0, 1, 0]"
+1975,"['Muktha Srinivasan', 'A. S. Pragasam', 'Avinashi Mani', 'R. A. Sankaran', 'A. P. Nagarajan', 'K. Sornam', 'K. Shanmugam', 'K. S. Gopalakrishnan', 'C. V. Rajendran', 'K. Balachander', 'Sreekumaran Thampi', 'P. Bhaskaran', 'N. Sankaran Nair', 'Muktha Srinivasan']","[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]"
+1976,"['P. Bhaskaran', 'Jeassy', 'K. Balachander', 'K. Balachander', 'K. Thankappan', 'J. Sasikumar', 'Ravi', 'S. A. Kannan', 'S. P. Muthuraman', 'R. C. Sakthi', 'M. Masthan', 'A. Jagannathan', 'Gemini Ganesan', 'Thoppil Bhasi', 'P. G. Viswambharan', 'K. Balachander', 'S. P. Muthuraman', 'Valampuri Somanathan']","[0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]"
+1977,"['K. Balachander', 'T. N. Balu', 'N. Sankaran Nair', 'I. V. Sasi', 'K. Balachander', 'M. Krishnan Nair', 'N. Sankaran Nair', 'G. Subramanya Reddiar', 'Bharat Shamsher', 'P. Gopikumar', 'A. Bhimsingh', 'K. S. Sethumadhavan', 'P. Bharathiraja', 'S. P. Muthuraman', 'I. V. Sasi', 'A. Vincent', 'Balu Mahendra', 'P. G. Viswambharan', 'Adoor Bhasi']","[1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+1978,"['K. Balachander', 'S. P. Muthuraman', 'N. Sankaran Nair', 'Baby', 'Jeassy', 'I. V. Sasi', 'K. Balachander', 'C. V. Sridhar', 'T. N. Balu', 'C. V. Sridhar', 'K. Balachander', 'P. G Vasudevan', 'A. Vincent', 'C. Rudhraiya', 'P. Bharathiraja', 'R. C. Sakthi', 'K. Balachander', 'I. V. Sasi']","[1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0]"
+1979,"['Singeetam Srinivasa Rao', 'Valampuri Somanathan', 'Durai', 'I. V. Sasi', 'R. Thyagarajan', 'K. Balachander', 'I. V. Sasi', 'K. Balachander', 'K. Balachander', 'G. N. Rangarajan', 'Durai', 'K. Shankar', 'Krishnan Panju', 'Balu Mahendra']","[0, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0]"
+1980,"['C. V. Rajendran', 'I. V. Sasi', 'K. Balachander', 'Durai', 'Dasarathan', 'Dasari Narayana Rao']","[0, 0, 1, 0, 0, 0]"
+1981,"['K. Balachander', 'K. Balachander', 'G. N. Rangarajan', 'R. Thyagarajan', 'Singeetam Srinivasa Rao', 'K. Balachander', 'G. N. Rangarajan', 'R. Krishnamoorthy', 'T. N. Balu', 'P. Bharathiraja', 'G. N. Rangarajan']","[1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0]"
+1982,"['R. Krishnamoorthy', 'Radhakrishnan', 'Balu Mahendra', 'K. G. Rajasekharan', 'Muktha Srinivasan', 'Narendra Bedi', 'S. P. Muthuraman', 'Krishnakumar', 'G. N. Rangarajan', 'Tatineni Rama Rao', 'Dhamodharan. N', 'K. Balachander']","[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]"
+1983,"['K. Balachander', 'S. V. Ramanan', 'K. Vijayan', 'K. Viswanath', 'Balu Mahendra', 'K. Balachander', 'K. Balachander', 'S. P. Muthuraman']","[1, 0, 0, 0, 0, 1, 1, 0]"
+1984,"['Tatineni Rama Rao', 'K. Balachander', 'Dasari Narayana Rao', 'Rajkumar Kohli', 'S. P. Muthuraman', 'I. V. Sasi']","[0, 1, 0, 0, 0, 0]"
+1985,"['P. Bharathiraja', 'Rajasekhar', 'Major Sundarrajan', 'S. P. Muthuraman', 'Ramesh Sippy', 'Prayag Raaj', 'K. Vijayan', 'S. P. Muthuraman', 'Virendra Sharma']","[0, 0, 0, 0, 0, 0, 0, 0, 0]"
+1986,"['Rajasekhar', 'K. Viswanath', 'C. V. Sridhar', 'R. C. Sakthi', 'A. Kodandarami Reddy', 'K. Balachander']","[0, 0, 0, 0, 0, 1]"
+1987,"['A. Jagannathan', 'I. V. Sasi', 'Santhana Bharathi', 'S. P. Muthuraman', 'Singeetam Srinivasa Rao', 'Mani Ratnam']","[0, 0, 0, 0, 0, 0]"
+1988,"['Pratap K. Pothen', 'Chitra Lakshmanan', 'K. Balachander', 'Suresh Krissna']","[0, 0, 1, 0]"
+1989,"['Singeetam Srinivasa Rao', 'T. K. Rajeev Kumar', 'Prathap Pothan', 'Suresh Krissna']","[0, 0, 0, 0]"
+1990,['Singeetam Srinivasa Rao'],[0]
+1991,['Santhana Bharathi'],[0]
+1992,"['R. V. Udayakumar', 'Bharathan']","[0, 0]"
+1993,"['G. N. Rangarajan', 'G. B. Vijay']","[0, 0]"
+1994,"['Santhana Bharathi', 'Singeetam Srinivasa Rao', 'K. S. Sethumadhavan']","[0, 0, 0]"
+1995,"['Balu Mahendra', 'K. Viswanath', 'P. C. Sreeram']","[0, 0, 0]"
+1996,"['S. Shankar', 'K. S. Ravikumar']","[0, 0]"
+1997,['Kamal Haasan'],[0]
+1998,['Singeetam Srinivasa Rao'],[0]
+2000,"['Kamal Haasan', 'K. S. Ravikumar']","[0, 0]"
+2001,"['Suresh Krissna', 'K. Balachander']","[0, 1]"
+2002,"['T. S. B. K. Moulee', 'K. S. Ravikumar']","[0, 0]"
+2003,"['Sundar. C', 'T. S. B. K. Moulee']","[0, 0]"
+2004,"['Kamal Haasan', 'Saran']","[0, 0]"
+2005,"['Singeetam Srinivasa Rao', 'Ramesh Aravind']","[0, 0]"
+2006,['Gautham Menon'],[0]
+2008,['K. S. Ravikumar'],[0]
+2009,['Chakri Toleti'],[0]
+2010,"['Saji Surendran', 'K. S. Ravikumar']","[0, 0]"
+2013,['Kamal Haasan'],[0]
+2015,"['Ramesh Aravind', 'Jeethu Joseph', 'Rajesh Selva']","[0, 0, 0]"
+2016,['Amudeshver'],[0]

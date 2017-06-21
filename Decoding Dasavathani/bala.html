@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font-family: 'Inconsolata', monospace;
+  margin: auto;
+  padding-top: 40px;
+  position: relative;
+  width: 960px;
+}
+
+.texted
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+path.swoopy, #arrowhead
+{
+    fill: none;
+    stroke: black;
+}
+
+.head
+{
+    font-size: 30px;
+}
+
+
+.legend
+{
+    font-size: 20px;
+}
+
+.texted
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+</style>
+<body>
+<div id='kamal'></div>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="swoopyArrow.js"></script>
+<script >
+var svg = d3.select('#kamal')
+            .append('svg')
+            .attr('height', 600 )
+            .attr('width', 1200)
+
+    d3.csv('bala.csv', function(data){
+        for(var i=0; i<data.length; i++)
+        {
+
+            svg.append('text')
+               .attr('x', 0)
+               .attr('y', 21+(i*13))
+               .attr('class', 'texted')
+               .text(data[i].year)
+
+        var chararray = JSON.parse(data[i].dir)
+        for(var k=0, charlenth = chararray.length ; k<charlenth; k++)
+        {
+
+            svg.append("svg:image")
+            .attr("xlink:href", function(){ return chararray[k]==1? 'double.svg': 'male.svg'})
+            .attr("width", 20)
+            .attr("height", 12)
+            .attr("x",  25 + k*20  )
+            .attr("y", 10+(i*13))
+            .attr('title', i)
+
+        }
+        }
+    })
+
+svg.append('text')
+   .attr('x', 500)
+   .attr('y', 50)
+   .attr('class', 'head')
+   .text("KB's Boy")
+
+svg.append("svg:image")
+            .attr("xlink:href",'male.svg')
+            .attr("width", 30)
+            .attr("height", 32)
+            .attr("x",  500 )
+            .attr("y", 70)
+
+svg.append("svg:image")
+            .attr("xlink:href",'double.svg')
+            .attr("width", 30)
+            .attr("height", 32)
+            .attr("x",  500 )
+            .attr("y", 110)
+
+svg.append('text')
+   .attr('x', 540)
+   .attr('y', 90)
+   .attr('class', 'legend')
+   .text('Directed by some director')
+
+svg.append('text')
+   .attr('x', 540)
+   .attr('y', 130)
+   .attr('class', 'legend')
+   .text('Director by K.Balachander')
+
+svg.append('text')
+   .attr('x', 600)
+   .attr('y', 580)
+   .attr('class', 'legend')
+   .text('Data Comics')
+
+</script>
+</body>

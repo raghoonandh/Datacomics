@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font-family: 'Inconsolata', monospace;
+  margin: auto;
+  padding-top: 40px;
+  position: relative;
+  width: 960px;
+}
+
+svg {
+  overflow: visible;
+}
+
+path.swoopy, #arrowhead
+{
+    fill: none;
+    stroke: black;
+}
+
+.head
+{
+    font-size: 30px;
+    }
+
+
+.legend
+{
+    font-size: 20px;
+}
+
+.texted
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+</style>
+<body>
+<div id='kamal'></div>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="swoopyArrow.js"></script>
+<script >
+var svg = d3.select('#kamal')
+            .append('svg')
+            .attr('height', 600 )
+            .attr('width', 1200)
+
+    d3.csv('kamalchar.csv', function(data){
+        for(var i=0; i<data.length; i++)
+        {
+
+            svg.append('text')
+               .attr('x', 0)
+               .attr('y', 21+(i*13))
+               .attr('class', 'texted')
+               .text(data[i].year)
+
+        var chararray = JSON.parse(data[i].flat)
+        for(var k=0, charlenth = chararray.length ; k<charlenth; k++)
+        {
+
+            svg.append("svg:image")
+            .attr("xlink:href", function(){ return chararray[k]==1? 'male.svg': 'double.svg'})
+            .attr("width", 20)
+            .attr("height", 12)
+            .attr("x",  25 + k*20  )
+            .attr("y", 10+(i*13))
+            .attr('title', i)
+
+        }
+        }
+    })
+
+
+svg.append('defs')
+  .append("marker")
+    .attr("id", "arrowhead")
+    .attr("viewBox", "-10 -10 20 20")
+    .attr("refX", 0)
+    .attr("refY", 0)
+    .attr("markerWidth", 20)
+    .attr("markerHeight", 20)
+    .attr("stroke-width", 1)
+    .attr("orient", "auto")
+  .append("polyline")
+    .attr("stroke-linejoin", "bevel")
+    .attr("points", "-6.75,-6.75 0,0 -6.75,6.75");
+
+
+var swoopy = swoopyArrow()
+  .angle(Math.PI/4)
+  .x(function(d) { return d[0]; })
+  .y(function(d) { return d[1]; });
+
+var swoopy2 = swoopyArrow()
+  .angle(Math.PI/3)
+  .x(function(d) { return d[0]; })
+  .y(function(d) { return d[1]; });
+
+svg.append("path")
+  .classed('swoopy', true)
+  .attr('marker-end', 'url(#arrowhead)')
+  .style('stroke', 'black')
+  .datum([[105,510],[200,430]])
+  .attr("d", swoopy); 
+
+
+svg.append("path")
+  .classed('swoopy', true)
+  .attr('marker-end', 'url(#arrowhead)')
+  .style('stroke', 'black')
+  .datum([[100,315],[200,350]])
+  .attr("d", swoopy2); 
+
+svg.append('text')
+   .attr('x', 205)
+   .attr('y', 435)
+   .text('Dasavatharam')
+
+svg.append('text')
+   .attr('x', 205)
+   .attr('y', 360)
+   .text('Michael Madana Kama Rajan')
+
+svg.append('text')
+   .attr('x', 500)
+   .attr('y', 50)
+   .attr('class', 'head')
+   .text('Kamal Character Map')
+
+svg.append("svg:image")
+            .attr("xlink:href",'male.svg')
+            .attr("width", 30)
+            .attr("height", 32)
+            .attr("x",  500 )
+            .attr("y", 70)
+
+svg.append("svg:image")
+            .attr("xlink:href",'double.svg')
+            .attr("width", 30)
+            .attr("height", 32)
+            .attr("x",  500 )
+            .attr("y", 110)
+
+svg.append('text')
+   .attr('x', 540)
+   .attr('y', 90)
+   .attr('class', 'legend')
+   .text('One Kamal in a Movie')
+
+svg.append('text')
+   .attr('x', 540)
+   .attr('y', 130)
+   .attr('class', 'legend')
+   .text('One of the Kamals in a Movie')
+
+svg.append('text')
+   .attr('x', 600)
+   .attr('y', 580)
+   .attr('class', 'legend')
+   .text('Data Comics')
+
+
+
+</script>
+</body>

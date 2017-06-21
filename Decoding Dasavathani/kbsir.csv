@@ -1,0 +1,34 @@
+year,char,movie
+1965,"[0.0, 0.0]","['neerkumizhi', 'naanal']"
+1966,[0.0],['major chandrakanth']
+1967,"[0.0, 0.0]","['bama vijayam', 'anubavi raja anubavi']"
+1968,"[0.0, 0.0, 0.0]","['ethir neechal', 'thamarai nenjam', 'bhale kodalu']"
+1969,"[0.0, 0.0, 0.0]","['poova thalaiya', 'sattekalapu satteya', 'iru kodugal']"
+1970,"[0.0, 0.0, 0.0, 0.0]","['patham pasali', 'ethiroli', 'navagraham', 'kaaviya thalaivi']"
+1971,"[0.0, 0.0, 0.0, 0.0]","['naangu suvargal', 'nootrukku nooru', 'bomma borusa', 'punnagai']"
+1972,"[0.0, 0.0]","['kanna nalama', 'velli vizha']"
+1973,"[1.0, 1.0]","['arangetram', 'sollathaan ninaikkiren']"
+1974,"[1.0, 1.0]","['aval oru thodar kathai', 'naan avanillai']"
+1975,[1.0],['apoorva raagangal']
+1976,"[1.0, 1.0, 1.0]","['manmadha leelai', 'anthuleni katha', 'moondru mudichu']"
+1977,"[1.0, 0.0, 1.0]","['avargal', 'pattina pravesam', 'aaina']"
+1978,"[1.0, 0.0, 1.0, 1.0]","['nizhal nijamagiradhu', 'maro charithra', 'thappu thalangal', 'thappida thala']"
+1979,"[1.0, 0.0, 1.0, 1.0, 1.0, 0.0]","['ninaithale inikkum', 'andamaina anubhavam', 'nool veli', 'guppedu manasu', 'idi katha kaadu', 'kazhagan']"
+1980,[1.0],['varumayin niram sivappu']
+1981,"[1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0]","['aakali rajyam', 'adavaalu meeku joharulu', 'enga ooru kannagi', 'tholikodi koosindi', 'thillu mullu', 'thaneer thaneer', 'ek duuje ke liye', '47 natkal', '47 rojulu']"
+1982,[1.0],['agni sakshi']
+1983,"[1.0, 1.0, 1.0, 0.0]","['benkiyalli aralida hoovu', 'poikkal kudhirai', 'zara si zindagi', 'kokilamma']"
+1984,"[1.0, 0.0, 0.0]","['ek nai paheli', 'achamillai achamillai', 'eradu rekhegalu']"
+1985,"[0.0, 0.0, 0.0]","['kalyana agathigal', 'sindhu bhairavi', 'mugila mallige']"
+1986,"[0.0, 1.0]","['sundara swapnagalu', 'punnagai mannan']"
+1987,[0.0],['manathil uruthi vendum']
+1988,"[0.0, 1.0]","['rudraveena', 'unnal mudiyum thambi']"
+1989,[0.0],['pudhu pudhu arthangal']
+1990,[0.0],['oru veedu iru vasal']
+1991,[0.0],['azhagan']
+1992,"[0.0, 0.0]","['vaaname ellai', 'dilon ka rishta']"
+1993,[0.0],['jathi malli']
+1994,[0.0],['duet']
+1996,[0.0],['kalki']
+2001,[1.0],['paarthale paravasam']
+2006,[0.0],['poi']

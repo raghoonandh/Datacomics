@@ -1,0 +1,47 @@
+year,language,movie
+1960,['Tamil'],['Kalathur Kannamma']
+1962,"['Tamil', 'Tamil', 'Malayalam']","['Paarthal Pasi Theerum', 'Paadha Kaanikkai', 'Kannum Karalum']"
+1963,"['Tamil', 'Tamil']","['Vanambadi', 'Anandha Jodhi']"
+1970,['Tamil'],['Maanavan']
+1971,['Tamil'],['Annai Velankanni']
+1972,['Tamil'],['Kurathi Magan']
+1973,"['Tamil', 'Tamil']","['Arangetram', 'Sollathaan Ninaikkiren']"
+1974,"['Tamil', 'Tamil', 'Tamil', 'Malayalam', 'Tamil', 'Malayalam', 'Tamil', 'Tamil']","['Paruva Kaalam', 'Gumasthavin Magal', 'Naan Avanillai', 'Kanyakumari', 'Anbu Thangai', 'Vishnu Vijayam', 'Aval Oru Thodar Kathai', 'Panathukkaga']"
+1975,"['Tamil', 'Tamil', 'Tamil', 'Tamil', 'Tamil', 'Tamil', 'Tamil', 'Malayalam', 'Tamil', 'Tamil', 'Malayalam', 'Malayalam', 'Malayalam', 'Tamil']","['Cinema Paithiyam', 'Pattampoochi', 'Aayirathil Oruthi', 'Then Sindhudhe Vaanam', 'Melnaattu Marumagal', 'Thangathile Vairam', 'Pattikkaattu Raja', 'Njan Ninne Premikkunnu', 'Maalai Sooda Vaa', 'Apoorva Raagangal', 'Thiruvonam', 'Mattoru Seetha', 'Raasaleela', 'Andharangam']"
+1976,"['Malayalam', 'Malayalam', 'Tamil', 'Telugu', 'Malayalam', 'Malayalam', 'Malayalam', 'Tamil', 'Tamil', 'Tamil', 'Malayalam', 'Tamil', 'Tamil', 'Malayalam', 'Malayalam', 'Tamil', 'Tamil', 'Tamil']","['Appooppan', 'Agni Pushpam', 'Manmadha Leelai', 'Anthuleni Katha', 'Samassiya', 'Swimming Pool', 'Aruthu', 'Satyam', 'Oru Oodhappu Kan Simittugiradhu', 'Unarchigal', 'Kuttavum Sikshayum', 'Kumaara Vijayam', 'Idhaya Malar', 'Ponni', 'Nee Ente Lahari', 'Moondru Mudichu', 'Mogam Muppadhu Varusham', 'Lalitha']"
+1977,"['Hindi', 'Tamil', 'Malayalam', 'Malayalam', 'Tamil', 'Malayalam', 'Malayalam', 'Tamil', 'Bengali', 'Malayalam', 'Malayalam', 'Malayalam', 'Tamil', 'Tamil', 'Malayalam', 'Tamil', 'Kannada', 'Malayalam', 'Malayalam']","['Aaina', 'Uyarndhavargal', 'Siva Thandavum', 'Aasheervaadam', 'Avargal', 'Madhuraswapnam', 'Sreedevi', 'Unnai Suttrum Ulagam', 'Kabita', 'Ashtamangalyam', 'Nirakudum', 'Ormakal Marikkumo', '16 Vayathinile', 'Aadu Puli Attam', 'Aanandham Paramaanandham', 'Naam Pirandha Mann', 'Kokila', 'Satyavan Savithri', 'Aadhya Paadam']"
+1978,"['Tamil', 'Tamil', 'Malayalam', 'Malayalam', 'Malayalam', 'Malayalam', 'Telugu', 'Tamil', 'Tamil', 'Telugu', 'Kannada', 'Malayalam', 'Malayalam', 'Tamil', 'Tamil', 'Tamil', 'Tamil', 'Malayalam']","['Nizhal Nijamagiradhu', 'Sakka Podu Podu Raja', 'Madanolsavam', 'Kaathirunna Nimisham', 'Aval Viswasthayayirunnu', 'Anumodhanam', 'Maro Charitra', 'Ilamai Oonjaladukirathu', 'Sattam En Kaiyil', 'Vayasu Pilichindi', 'Thappida Thala', 'Padakuthira', 'Vayanadan Thamban', 'Aval Appadithan', 'Sigappu Rojakal', 'Manidharil Ithanai Nirangala', 'Thappu Thalangal', 'Yaetta']"
+1979,"['Telugu', 'Tamil', 'Tamil', 'Malayalam', 'Tamil', 'Tamil', 'Telugu', 'Tamil', 'Telugu', 'Tamil', 'Tamil', 'Tamil', 'Telugu', 'Tamil', 'Tamil', 'Tamil']","['Sommokadidhi Sokkadidhi', 'Sigappukkal Mookkuthi', 'Neeya', 'Allauddinum Albhutha Vilakkum', 'Thaayillamal Naan Illai', 'Ninaithale Inikkum', 'Andhamaina Anubhavam', 'Allaudinaum Arputha Vilakkum', 'Idi Katha Kaadu', 'Nool Veli', 'Kalyanaraman', 'Pasi', 'Guppedu Manasu', 'Mangala Vaathiyam', 'Neela Malargal', 'Azhiyadha Kolangal']"
+1980,"['Tamil', 'Tamil', 'Tamil', 'Kannada', 'Tamil', 'Tamil', 'Tamil']","['Ullasa Paravaigal', 'Guru', 'Varumayin Niram Sivappu', 'Maria, My Darling', 'Maria, My Darling', 'Saranam Ayyappa', 'Natchathiram']"
+1981,"['Tamil', 'Telugu', 'Tamil', 'Tamil', 'Tamil', 'Hindi', 'Tamil', 'Tamil', 'Tamil', 'Tamil', 'Tamil']","['Thillu Mullu', 'Aakali Rajyam', 'Meendum Kokila', 'Ram Lakshman', 'Raja Paarvai', 'Ek Duuje Ke Liye', 'Kadal Meengal', 'Savaal', 'Sankarlal', 'Tik Tik Tik', 'Ellam Inbamayyam']"
+1982,"['Tamil', 'Malayalam', 'Tamil', 'Malayalam', 'Tamil', 'Hindi', 'Tamil', 'Malayalam', 'Tamil', 'Hindi', 'Tamil', 'Tamil']","['Vazhvey Maayam', 'Anthiveyilile Ponnu', 'Moondram Pirai', 'Maattuvin Chattangale', 'Simla Special', 'Sanam Teri Kasam', 'Sakalakala Vallavan', 'Ezham Rathiri', 'Rani Theni', 'Yeh To Kamaal Ho Gaya', 'Pagadai Panirendu', 'Agni Sakshi']"
+1983,"['Hindi', 'Tamil', 'Tamil', 'Telugu', 'Hindi', 'Tamil', 'Kannada', 'Tamil']","['Zara Si Zindagi', 'Uruvangal Maralam', 'Sattam', 'Sagara Sangamam', 'Sadma', 'Poikkal Kudhirai', 'Benkiyalli Aralida Hoovu', 'Thoongadhey Thambi Thoongadhey']"
+1984,"['Hindi', 'Hindi', 'Hindi', 'Hindi', 'Tamil', 'Hindi']","['Yeh Desh', 'Ek Nai Paheli', 'Yaadgar', 'Raaj Tilak', 'Enakkul Oruvan', 'Karishma']"
+1985,"['Tamil', 'Tamil', 'Tamil', 'Tamil', 'Hindi', 'Hindi', 'Tamil', 'Tamil', 'Hindi']","['Oru Kaidhiyin Diary', 'Kaakki Sattai', 'Andha Oru Nimidam', 'Uyarndha Ullam', 'Saagar', 'Geraftaar', 'Mangamma Sabadham', 'Japanil Kalyanaraman', 'Dekha Pyar Tumhara']"
+1986,"['Tamil', 'Telugu', 'Tamil', 'Tamil', 'Telugu', 'Tamil']","['Vikram', 'Swathi Muthyam', 'Naanum Oru Thozhilali', 'Manakanakku', 'Oka Radha Iddaru Krishnulu', 'Punnagai Mannan']"
+1987,"['Tamil', 'Malayalam', 'Tamil', 'Tamil', 'Silent', 'Tamil']","['Kadhal Parisu', 'Vrutham', 'Kadamai Kanniyam Kattupaadu', 'Per Sollum Pillai', 'Pushpaka Vimana', 'Nayakan']"
+1988,"['Malayalam', 'Tamil', 'Tamil', 'Tamil']","['Daisy', 'Soora Samhaaram', 'Unnal Mudiyum Thambi', 'Sathya']"
+1989,"['Tamil', 'Malayalam', 'Tamil', 'Telugu']","['Apoorva Sagodharargal', 'Chanakyan', 'Vetri Vizha', 'Indrudu Chandrudu']"
+1990,['Tamil'],['Michael Madana Kama Rajan']
+1991,['Tamil'],['Gunaa']
+1992,"['Tamil', 'Tamil']","['Singaravelan', 'Thevar Magan']"
+1993,"['Tamil', 'Tamil']","['Maharasan', 'Kalaignan']"
+1994,"['Tamil', 'Tamil', 'Tamil']","['Mahanadi', 'Magalir Mattum', 'Nammavar']"
+1995,"['Tamil', 'Telugu', 'Tamil']","['Sathi Leelavathi', 'Subha Sankalpam', 'Kuruthipunal']"
+1996,"['Tamil', 'Tamil']","['Indian', 'Avvai Shanmugi']"
+1997,['Hindi'],['Chachi 420']
+1998,['Tamil'],['Kaathala Kaathala']
+2000,"['Tamil', 'Hindi', 'Tamil']","['Hey Ram', 'Hey Ram', 'Thenali']"
+2001,"['Tamil', 'Hindi', 'Tamil']","['Aalavandhan', 'Abhay', 'Parthale Paravasam']"
+2002,"['Tamil', 'Tamil']","['Pammal K. Sambandam', 'Panchathanthiram']"
+2003,"['Tamil', 'Tamil']","['Anbe Sivam', 'Nala Damayanthi']"
+2004,"['Tamil', 'Tamil']","['Virumaandi', 'Vasool Raja MBBS']"
+2005,"['Tamil', 'Hindi', 'Kannada']","['Mumbai Express', 'Mumbai Xpress', 'Rama Shama Bhama']"
+2006,['Tamil'],['Vettaiyaadu Vilaiyaadu']
+2008,['Tamil'],['Dasavathaaram']
+2009,"['Tamil', 'Telugu']","['Unnaipol Oruvan', 'Eenadu']"
+2010,"['Malayalam', 'Tamil']","['Four Friends', 'Manmadhan Ambu']"
+2013,"['Tamil', 'Hindi']","['Vishwaroopam', 'Vishwaroop']"
+2015,"['Tamil', 'Tamil', 'Tamil', 'Telugu']","['Uttama Villain', 'Papanasam', 'Thoongaa Vanam', 'Cheekati Rajyam']"
+2016,['Tamil'],['Meen Kuzhambum Mann Paanaiyum']
+2017,"['Tamil', 'Telugu', 'Hindi', 'Tamil', 'Hindi']","['Sabaash Naidu\xc2\xa0', 'Sabaash Naidu\xc2\xa0', 'Shabhash Kundu\xc2\xa0', 'Vishwaroopam II\xc2\xa0', 'Vishwaroop II\xc2\xa0']"

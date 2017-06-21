@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font-family: 'Inconsolata', monospace;
+  margin: auto;
+  padding-top: 40px;
+  position: relative;
+  width: 960px;
+}
+
+svg {
+  overflow: visible;
+}
+
+path.swoopy, #arrowhead
+{
+    fill: none;
+    stroke: black;
+}
+
+.head
+{
+    font-size: 30px;
+}
+
+
+.legend
+{
+    font-size: 20px;
+}
+
+.texted
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+</style>
+<body>
+<div id='kamal'></div>
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="swoopyArrow.js"></script>
+<script >
+var svg = d3.select('#kamal')
+            .append('svg')
+            .attr('height', 600 )
+            .attr('width', 1200)
+
+    d3.csv('lang.csv', function(data){
+      data.pop()
+        for(var i=0; i<data.length; i++)
+        {
+
+            svg.append('text')
+               .attr('x', 0)
+               .attr('y', 21+(i*13))
+               .attr('class', 'texted')
+               .text(data[i].year)
+
+        var chararray = (data[i].language)
+        chararray = chararray.replace(/'/g, '"');
+        chararray = JSON.parse(chararray);
+        var moviearray = (data[i].movie)
+        moviearray = moviearray.replace(/'/g, '"');
+        moviearray = JSON.parse(moviearray);
+        for(var k=0, charlenth = chararray.length ; k<charlenth; k++)
+        {
+
+        var img =    svg.append("svg:image")
+            .attr("xlink:href", function(){return getlogo(chararray[k]) })
+            .attr("width", 20)
+            .attr("height", 12)
+            .attr("x",  25 + k*20  )
+            .attr("y", 10+(i*13))
+           
+           img.append('svg:title')
+              .text(moviearray[k])
+
+        }
+        }
+    })
+
+var langarray = ['Tamil', 'Hindi', 'Malayalam', 'Telugu']
+function getlogo(lang)
+{
+ if ( langarray.indexOf(lang) > -1)
+  return lang+'.svg'
+return 'Other.svg'
+}
+
+
+svg.append('defs')
+  .append("marker")
+    .attr("id", "arrowhead")
+    .attr("viewBox", "-10 -10 20 20")
+    .attr("refX", 0)
+    .attr("refY", 0)
+    .attr("markerWidth", 20)
+    .attr("markerHeight", 20)
+    .attr("stroke-width", 1)
+    .attr("orient", "auto")
+  .append("polyline")
+    .attr("stroke-linejoin", "bevel")
+    .attr("points", "-6.75,-6.75 0,0 -6.75,6.75");
+
+
+var swoopy = swoopyArrow()
+  .angle(Math.PI/4)
+  .x(function(d) { return d[0]; })
+  .y(function(d) { return d[1]; });
+
+var swoopy2 = swoopyArrow()
+  .angle(Math.PI/3)
+  .x(function(d) { return d[0]; })
+  .y(function(d) { return d[1]; });
+
+svg.append("path")
+  .classed('swoopy', true)
+  .attr('marker-end', 'url(#arrowhead)')
+  .style('stroke', 'black')
+  .datum([[140,196],[220,270]])
+  .attr("d", swoopy2); 
+
+
+svg.append("path")
+  .classed('swoopy', true)
+  .attr('marker-end', 'url(#arrowhead)')
+  .style('stroke', 'black')
+  .datum([[115,275],[200,350]])
+  .attr("d", swoopy2); 
+
+svg.append('text')
+   .attr('x', 215)
+   .attr('y', 285)
+   .text('Ek Duuje Ke Liye')
+
+svg.append('text')
+   .attr('x', 205)
+   .attr('y', 360)
+   .text('Silent Movie')
+
+svg.append('text')
+   .attr('x', 500)
+   .attr('y', 50)
+   .attr('class', 'head')
+   .text('The language Map')
+
+
+var langarr = ['Tamil', 'Malayalam', 'Telugu', 'Hindi','Other']
+
+for( var i=0; i< langarr.length; i++)
+
+{
+svg.append("svg:image")
+            .attr("xlink:href",langarr[i]+'.svg')
+            .attr("width", 30)
+            .attr("height", 32)
+            .attr("x",  500 )
+            .attr("y", 70+i*40)
+
+svg.append('text')
+   .attr('x', 540)
+   .attr('y', 90+i*40)
+   .attr('class', 'legend')
+   .text(langarr[i])
+}
+
+
+
+svg.append('text')
+   .attr('x', 600)
+   .attr('y', 580)
+   .attr('class', 'legend')
+   .text('Data Comics')
+
+
+
+</script>
+</body>
